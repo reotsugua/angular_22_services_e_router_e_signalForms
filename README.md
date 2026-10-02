@@ -1,5 +1,3 @@
-![](thumbnail.png)
-
 # UseDev - E-commerce de produtos geeks 
 
 Um projeto prático desenvolvido passo a passo para quem já tem o básico de Angular e quer evoluir para construir aplicações mais organizadas, escaláveis e com experiência moderna. Ao longo do curso, criamos um app de ecommerce para selecionar produtos, navegar entre páginas de lista, detalhe e carrinho e aprimorar a comunicação e estado entre componentes, serviços e rotas.
