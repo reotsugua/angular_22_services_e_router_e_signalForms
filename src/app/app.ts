@@ -1,18 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Product, products } from './product';
+import { Header } from './components/header/header';
+import { Banner } from './components/banner/banner';
+import { Footer } from './components/footer/footer';
+import { ProductList } from './components/product-list/product-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Header, Banner, Footer, ProductList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  products = signal<Product[]>(products);
-  totalCardItems = signal(0);
-  
-  addToCard() {
-    this.totalCardItems.update(value => value + 1)
-  }
-}
+export class App {}
