@@ -1,5 +1,5 @@
-<app-header />
+<app-header [cartCount]="carItemsCount()" />
 <app-banner />
-<app-product-list />
+<app-product-list [products]="products()" (addToCart)="modalCart($event)" />
 <app-footer />
 <router-outlet />
