@@ -4,7 +4,7 @@ import { Header } from './components/header/header';
 import { Banner } from './components/banner/banner';
 import { Footer } from './components/footer/footer';
 import { ProductList } from './components/product-list/product-list';
-import { Product, products } from './product';
+import { Product } from './product';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,6 @@ import { Product, products } from './product';
   styleUrl: './app.css'
 })
 export class App {
-  products = signal<Product[]>(products);
   cart = signal<Product[]>([]);
   carItemsCount = computed(()=> this.cart().length)
 

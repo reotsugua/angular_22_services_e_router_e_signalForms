@@ -9,5 +9,12 @@ import { Product } from '../../product';
 })
 export class ProductCard {
   product = input.required<Product>();
-  addToCart = output();
+  
+
+  /**
+   * addToCart
+   */
+  public addToCart(product: Product) {
+    
+  }
 }
